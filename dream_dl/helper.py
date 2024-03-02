@@ -1,0 +1,2 @@
+def make_curl(url: str, path: str) -> str:
+    return f"curl -o {path} '{url}' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0' -H 'Accept: video/webm,video/ogg,video/*;q=0.9,application/ogg;q=0.7,audio/*;q=0.6,*/*;q=0.5' -H 'Accept-Language: en-GB,en;q=0.5' -H 'Range: bytes=0-' -H 'DNT: 1' -H 'Connection: keep-alive' -H 'Sec-Fetch-Dest: video' -H 'Sec-Fetch-Mode: no-cors' -H 'Sec-Fetch-Site: cross-site' -H 'Accept-Encoding: identity'"
